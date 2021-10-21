@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        function findArea() {
+            side1 = parseInt(document.oblik.side_1.value);
+            side2 = parseInt(document.oblik.side_2.value);
+            side3 = parseInt(document.oblik.side_3.value);
+            p = parseFloat((side1 + side2 + side3) / 2);
+            area = Math.sqrt(p(p - side1)(p - side2) * (p - side3));
+            document.write(area + ' cm²');
+        }
+    </script>
+</head>
+
+<body>
+    <form id="oblik" name="oblik">
+        <input id="side_1" placeholder="Side 1" name="side_1" type="text">
+        <input id="side_2" placeholder="Side 2" name="side_2" type="text">
+        <input id="side_3" placeholder="Side 3" name="side_3" type="text">
+        <input type="submit" class="button" value="Find the Area" onClick="findArea()">
+    </form>
+
+</body>
+
+</html>
