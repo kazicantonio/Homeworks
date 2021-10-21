@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function guessTheNumber() {
+            num = document.fform.input.value;
+            num = (parseInt)(num);
+            if (Number.isInteger(num) == false || num < 1 || num > 10) {
+                alert("Invalid");
+                document.fform.input.value = '';
+            } else {
+                rand = getRandomInt(10) + 1;
+                if (num == rand) {
+                    document.write("Matched");
+                } else {
+                    document.write("Not matched.");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fform" action="">
+        Enter a number between 1 and 10<br>
+        <input id="input" name="input" class="inp_text" type="text" size="50">
+        <input type="button" value="Submit" onclick="guessTheNumber()" />
+    </form>
+</body>
+
+</html>
