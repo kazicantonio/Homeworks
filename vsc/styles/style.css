@@ -1,0 +1,139 @@
+.h1 {
+    height: 40px;
+    background-color: teal;
+    text-align: center;
+}
+
+.main-box {
+    width: 1000px;
+    height: 600px;
+
+    margin-left: 25%;
+    margin-top: 5%;
+
+    background-color: orange;
+    border-radius: 15px;
+    border: 8px solid 	#CC5500
+}
+
+.top-container {
+    display: flex;
+}
+
+.top-left {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: darkorange;
+    
+}
+
+.top-right {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #FFBF00;
+}
+
+.bottom-container {
+    display: flex;
+}
+
+.bottom-left {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #FFBF00;
+}
+
+.bottom-right {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: darkorange;
+}
+
+.dots {
+    display: flex;
+    margin-left: 35%;
+    margin-top: 25%;
+}
+
+.dots-div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 8px;
+    animation: scaling 2.5s ease-in-out infinite;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(0.2);
+    }
+    40% {
+        transform: scale(1);
+        background-color: darkgrey ;
+    }
+    50% {
+        transform: scale(1);
+        background-color: black ;
+    }
+}
+
+div:nth-child(0) {
+    animation-delay: 0s;
+}
+
+div:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+div:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+div:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.progress {
+    position: relative;
+    height: 20px;
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 27%;
+    background-color: #DCDCDC;
+}
+
+.progress .progress-div {
+    position: absolute;
+    background-color: white;
+    width: 50px;
+    height: 20px;
+    animation: progress 3s infinite  linear;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+        background-color: white;
+    }
+    25% {
+        width: 25%;
+        background-color: #D3D3D3;
+    }
+    50%{
+        width: 50%;
+        background-color: #A9A9A9;
+    }
+    75%{
+        width: 75%;
+        background-color: #808080;
+    }
+    100%{
+        width: 100%;
+        background-color: #000000;
+    }
+}
